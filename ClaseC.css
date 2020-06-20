@@ -1,0 +1,51 @@
+body{
+    background-color: cornflowerblue;
+}
+table img{
+    width: 70px;
+    height: 70px;
+    filter: grayscale(100%);
+}
+table img:hover{
+    filter: grayscale(0%);
+}
+.tabla{
+    margin: auto;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+}
+.bodyx{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+section img{
+    padding: 3px 10px;
+    border: black 5px solid;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.tablas table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+aside table{
+    font-size: 50px;
+    margin: auto;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+}
+/*.unob, .unoc{
+    display: none;
+}
+.mostrar{
+    display: block;
+}*/
+
+
+
+
+
+

@@ -1,0 +1,284 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+    background-image: url(imagenes/cosmos2.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.reloj{
+    z-index: -100;
+    position: absolute;
+    left: 5%;
+}
+.reloj img{
+    width: 30%;
+    height: 30%;
+}
+.hora{
+    font-size: 150%;
+    font-weight: 600;
+    display: none;
+}
+.mostrar{
+    display: block;
+}
+
+
+nav{
+    z-index: 1000;
+}
+header nav{
+    margin-top: 1%;
+    margin-left: 15%;
+    width: 80%;
+    background: linear-gradient(to right, #2ebf91, #8360c3); 
+}
+.barra_p{
+    display: flex;
+    width: 100%;
+    height: 130px;
+}
+.barra_p a {
+    display: inline-block;
+}
+.ulprincipal >li{
+    float: left;
+}
+ul{
+    list-style: none;
+}
+.ulprincipal li ul li{
+    background-color: cadetblue;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.ulprincipal li ul{
+    font-weight: 700;
+    font-size: 150%;
+    top: 149px;
+    display: none;
+    width: 12%;
+    position: absolute;
+    z-index: 2;
+    color: white;
+}
+.ulprincipal li:hover >ul{
+    display: block;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+/*.ulprincipal li img{
+    display: block;
+}*/
+.relaciones img{
+    margin-top: 5%;
+}
+.ulprincipal img{
+    /*display: block;
+    transition: all .5s cubic-bezier(2, 0.045, 0.355, 1);*/
+    filter: grayscale(100%);
+}
+.personajes:hover img{
+    margin-top: 6px;
+    filter: grayscale(0%);
+}
+.cosmos:hover img{
+    margin-top: 6px;
+    filter: grayscale(0%);
+}
+.recursos:hover img{
+    margin-top: 6px;
+    filter: grayscale(0%);
+}
+.tienda:hover img{
+    margin-top: 6px;
+    filter: grayscale(0%);
+}
+.modos:hover img{
+    margin-top: 6px;
+    filter: grayscale(0%);
+}
+.relaciones:hover img{
+    margin-top: 14px;
+    filter: grayscale(0%);
+}
+.hamburguesa{
+	display: none;
+}
+@media screen and (max-width: 1170px){
+    .personajes:hover img{
+        margin-top: 0px;
+        margin-left: 20px;
+        filter: grayscale(0%);
+    }
+    .cosmos:hover img{
+        margin-top: 0px;
+        margin-left: 20px;
+        filter: grayscale(0%);
+    }
+    .recursos:hover img{
+        margin-top: 0px;
+        margin-left: 20px;
+        filter: grayscale(0%);
+    }
+    .tienda:hover img{
+        margin-top: 0px;
+        margin-left: 20px;
+        filter: grayscale(0%);
+    }
+    .modos:hover img{
+        margin-top: 0px;
+        margin-left: 20px;
+        filter: grayscale(0%);
+    }
+    .relaciones:hover img{
+        margin-top: 0px;
+        margin-left: 20px;
+        filter: grayscale(0%);
+    }
+    .relaciones img{
+        margin-top: 0%;
+    }
+    .ulprincipal li:hover >ul{
+        display: block;
+    }
+    header nav{
+        width: 60%;
+        height: 100%;
+        left: -1000px;
+        margin: 0;
+        position: fixed;
+    }
+    .ulprincipal  >li{
+		float: none;
+    }
+    .ulprincipal img{
+		width: 120px;
+	}
+    .ulprincipal li ul{
+        position: inherit;
+        width: 100%;
+    }
+    .ulprincipal >li{
+		display: flex;
+		height: 100%;
+	}
+    .hamburguesa{
+		display: block;
+		width: 100%;
+		background: #ccc;
+	}
+	.hamburguesa .bt-hamb{
+		display: block;
+		padding: 20px;
+		background: linear-gradient(to right, #2ebf91, #8360c3); 
+		color: white;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 25px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing: border-box;
+    }
+    .hamburguesa span{
+		float: right;
+		font-size: 40px;
+    }
+    .bodyx{
+        flex-direction: column;
+    }
+}
+.bodyx{
+    display: flex;
+    justify-content: space-evenly;
+}
+section h1{
+    padding: 1%;
+    background-color: cadetblue;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 5px 5px black;
+    cursor:default; 
+}
+.section_1{
+    width: 50%;    
+}
+.slider {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.slider ul{
+    display: flex;
+    padding: 1%;
+    width: 400%;
+    animation: cambio 20s infinite alternate;
+}
+.slider li{
+    width: 110%;
+    list-style: none;
+}
+.slider img{
+    width: 95%;
+    height: 95%;
+}
+
+@keyframes cambio {
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+    
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+section{
+    margin-top: 5%;
+    padding-left: 10%;
+}
+section img{
+    border-radius: 5%;
+}
+aside{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+aside h1{
+    padding: 1%;
+    background-color: cadetblue;
+    width: 50%;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 5px 5px black;
+    cursor:default; 
+}
+.comunidad, .opinion{
+    margin-top: 5%;
+}
+.comunidadimg img , .opinionimg img{
+    margin-top: 2%;
+    margin-left: 12%;
+    border-radius: 50px;
+    border: 5px solid cadetblue; 
+}
+aside img{
+    width: 70%;
+    height: 70%;
+}
+.comunidad, .opinion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+

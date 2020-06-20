@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>encuesta</title>
+    <link rel="stylesheet" type="text/css" href="encuesta.css">
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <section>
+        <form>
+            <div class="superpadre">
+                <div class="divisionpadre">
+                    <div class="division">
+
+                        <div class="input_1">
+                            <label for="ID_1">ID Jugador</label>
+                            <input id="ID_1" autocomplete="off">
+                        </div>
+
+                        <div class="input_2">
+                            <label for="ID_2">Server</label>
+                            <select id="ID_2" onchange="seleccionprim()">
+                                <option value=""></option>
+                                <option value="Aries">1</option>
+                                <option value="Tauro">2</option>
+                                <option value="Geminis">3</option>
+                                <option value="Cancer">4</option>
+                                <option value="Leo">5</option>
+                                <option value="Virgo">6</option>
+                                <option value="Libra">7</option>
+                                <option value="Escorpio">8</option>
+                                <option value="Sagitario">9</option>
+                                <option value="Capricornio">10</option>
+                                <option value="Acuario">11</option>
+                                <option value="Piscis">12</option>
+                            </select>
+                            <input id="ID_2_2" type="text" autocomplete="off" readonly="readonly">
+                        </div>
+
+                        <div class="input_3">
+                            <div class="label1"><label>Tiempo</label></div>
+                            <div class="radio_1">
+                                <input name="radio_1" type="radio" value="0-2 meses"><label>0-2 Meses</label>
+                                <input name="radio_1" type="radio" value="2-4 meses"><label>2-4 Meses</label>
+                                <input name="radio_1" type="radio" value="4-6 meses"><label>4-6 Meses</label>
+                                <input name="radio_1" type="radio" value="+6 meses"><label>+6 Meses</label>
+                            </div>
+                        </div>
+
+                        <div class="input_4">
+                            <div class="label2"><label>Dinero invertido</label></div>
+                            <div class="radio_2">
+                                <input name="radio_2" type="radio" value="0$"><label>0$</label>
+                                <input name="radio_2" type="radio" value="+1$"><label>+1$</label>
+                                <input name="radio_2" type="radio" value="+10$"><label>+10$</label>
+                                <input name="radio_2" type="radio" value="+50$"><label>+50$</label>
+                                <input name="radio_2" type="radio" value="+100$"><label>+100$</label>
+                                <input name="radio_2" type="radio" value="+200$"><label>+200$</label>
+                                <input name="radio_2" type="radio" value="+500$"><label>+500$</label>
+                            </div>
+                        </div>
+
+                        <div class="input_5">
+                            <div class="label3"><label>Sexo</label></div>
+                            <div class="radio_3">
+                                <input name="radio_3" type="radio" value="Masculino"><label>MASCULINO</label>
+                                <input name="radio_3" type="radio" value="Femenino"><label>FEMENINO</label>
+                                <input name="radio_3" type="radio" value="No decirlo"><label>NO DECIRLO</label>
+                            </div>
+                        </div>
+
+                        <div class="input_6">
+                            <label for="ID_6">Pais</label>
+                            <input id="ID_6" autocomplete="off">
+                        </div>
+                    </div>
+                    <img
+                        src="https://66.media.tumblr.com/edced876727d3b60e39961dd32ef93e4/2e34e21dcb44ee31-08/s1280x1920/88e9a1350641459faff6a02847feb47412e999b9.png">
+                </div>
+                <div class="columna3">
+                    <div class="input_7">
+                        <label for="ID_7">Correo electronico</label>
+                        <input id="ID_7" autocomplete="off">
+                    </div>
+                    <div class="input_8">
+                        <label for="ID_8">Sistema operativo</label>
+                        <select id="ID_8">
+                            <option value=""></option>
+                            <option value="Android">Android</option>
+                            <option value="IOS">IOS</option>
+                        </select>
+                    </div>
+                    <div class="input_9">
+                        <label for="ID_9">Edad</label>
+                        <input id="ID_9" type="number" min="0" max="99" autocomplete="off" >
+                    </div>
+                    <div class="input_10">
+                        <label for="ID_10">Compra</label>
+                        <input id="ID_10" type="number" min="0" max="99" autocomplete="off">
+                        <select id="ID_10_1">
+                            <option value=""></option>
+                                <option value="Cupones">Cupones</option>
+                                <option value="Gemas">Gemas</option>
+                                <option value="Paquete">Paquete de Recursos</option>
+                                <option value="Gemas">Gemas</option>
+                                <option value="Camisetas">Camisetas</option>
+                        </select>
+                    </div>
+                    <div class="area_0">
+                        <label>Agregar comentarios</label>
+                        <textarea class="area0"></textarea>
+                    </div>
+                </div>
+            </div>
+        <hr>
+            <div class="padresito">
+                <div class="area_1">
+                    <label>Mostrando datos</label>
+                    <textarea id="textarea"></textarea>
+                </div>
+                <button id="submit" type="button">Enviar</button>
+            </div>
+        </form>
+    </section>
+</body>
+<script src="encuesta.js">
+</script>
+
+</html>
